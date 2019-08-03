@@ -1,0 +1,50 @@
+
+/* Блок 3 - Форма */
+.block_3 {
+    margin-top: 75px;
+    height: 440px;
+    .container::before {
+        position: absolute;
+        content: '';
+        width: 241px;
+        height: 241px;
+        top: -100px;
+        left: -90px;
+        background-image: url(../img/dots__pink.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .form-container {
+        &::before {
+            top: -115px;
+            right: -88px;
+            width: 267px;
+            height: 140px;
+            background-image: url(../img/leafs/leaf-1.png);
+            z-index: 1;
+        }
+        &::after {
+            left: -100px;
+            bottom: -50px;
+            width: 256px;
+            height: 214px;
+            background-image: url(../img/leafs/leaf-2.png);
+            z-index: 10;
+        }
+    }
+    .title {
+        padding-top: 86px;
+        margin-left: -9px;
+        &__desc {
+            margin-bottom: 50px;
+            margin-left: -10px;
+        }
+    }
+    form.b1_ff {
+        padding-left: 11px;
+        margin: 0 auto 10px;
+        &:after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+/* Блок 5 - Форма */
+.block_5 {
+    text-align: center;
+    margin-top: 90px;
+    .container::before {
+        position: absolute;
+        content: '';
+        width: 241px;
+        height: 241px;
+        top: -87px;
+        right: -84px;
+        background-image: url(../img/dots__blue.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .form-container {
+        margin-left: 10px;
+        margin-bottom: 100px;
+        &::after {
+            left: -60px;
+            bottom: -70px;
+            width: 211px;
+            height: 137px;
+            background-image: url(../img/leafs/leaf-3.png);
+            z-index: 10;
+        }
+    }
+    .title {
+        padding-top: 88px;
+        margin-left: -30px;
+        &__desc {
+            margin-bottom: 37px;
+            margin-left: -30px;
+        }
+    }
+    form.b1_ff {
+        margin: 0 auto;
+    }
+    .politic {
+        margin-left: -30px;
+        padding-top: 12px;
+    }
+}

@@ -1,0 +1,55 @@
+/* Форма */
+form.b1_ff {
+    width: 100%;
+    max-width: 810px;
+    height: 88px;
+    margin-bottom: 42px;
+    line-height: 1;
+    input {
+        width: 194px;
+        padding-left: 35px;
+        margin-right: 40px;
+        margin-left: -2px;
+        padding-bottom: 18px;
+        border-bottom: 2px solid @gray;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        &[name="name"] {
+            background-image: url(../img/icons/avatar.png);
+        }
+        &[name="phone"] {
+            background-image: url(../img/icons/telephone.png);
+        }
+    }
+}
+
+
+.button {
+    font-family: 'MullerBold';
+    font-size: 16px;
+    font-weight: 700;
+    width: 320px;
+    height: 80px;
+    margin-top: -8px;
+    margin-left: -2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: @white;
+    border-radius: 40px;
+    background-color: @pink;
+    background-image: linear-gradient(to top, @gradient-dark__pink 0%, @gradient-light__pink 100%);
+    box-shadow: 0 30px 50px -25px @pink;
+}
+
+.politic {
+    margin-left: -10px;
+    font-size: 12px;
+    line-height: 34px;
+    text-align: center;
+    color: @black;
+    opacity: 0.4;
+    padding-bottom: 80px;
+    a {
+        color: @black;
+    }
+}

@@ -1,0 +1,79 @@
+/* Блок 2 - Для вас идеально подойдет обучение, если вы */
+
+.block_2 {
+    margin-top: 98px;
+}
+
+.b2 {
+    &-list {
+        display: flex;
+        margin: 50px 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 15px 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &-img {
+            width: 360px;
+            height: 320px;
+            position: relative;
+            margin-bottom: 25px; 
+            picture {
+                position: absolute;
+            }
+            &-1 {
+                bottom: -1px;
+            }
+            &-2 {
+               left: -10px;
+               top: 1px;
+            }
+            &-3 {
+                left: -3px;
+                top: -17px;
+            }
+            &-4 {
+                bottom: 3px;
+                right: 3px;
+            }
+            &-5 {
+                bottom: 3px;
+                right: -19px;
+            }
+        }
+        &-text {
+            font-family: 'MullerLight';
+            font-size: 22px;
+            line-height: 34px;
+            text-align: center;
+            margin-bottom: 5px;
+            strong {
+                font-family: 'MullerBold';
+            }
+        }
+    }
+}
+
+
+.b1__form {
+    position: relative;
+    width: 100%;
+    max-width: 876px;
+    margin: 0 auto;
+    margin-top: 125px;
+    &-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+        color: @white;
+    }
+}

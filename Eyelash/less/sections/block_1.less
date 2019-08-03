@@ -1,0 +1,97 @@
+/* Блок 1 - Главный экран */
+.block_1 {
+    height: 800px;
+    background-image: url('../img/main-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .title {
+        max-width: 748px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    .title__desc {
+        max-width: 650px;
+        text-align: left;
+    }
+}
+
+.header {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 49px;
+    justify-content: space-between;
+    &__right {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    &__phone {
+        font-family: 'MullerExtraBold';
+        font-size: 20px;
+        line-height: 30px;
+        position: relative;
+        color: @black;
+        &:hover {
+            color: @pink;
+        }
+        &:before {
+            position: absolute;
+            top: 6px;
+            left: -26px;
+            width: 20px;
+            height: 20px;
+            content: '';
+            background: url(../img/icons/telephone-icon.png);
+        }
+    }
+    &__callback {
+        font-family: 'MullerMedium';
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: underline;
+        margin-top: -1px;
+        color: @pink__light;
+        &:hover {
+            color: @pink__light;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -10px;
+    img {  
+        width: 151px;
+        height: 159px;
+    }
+}
+
+.b1 {
+    &__cont {
+        display: flex;
+        margin-left: -15px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+        min-width: 164px;
+        &-img {
+            display: flex;
+            align-items: flex-end;
+            width: 55px;
+            height: 55px;
+            margin-bottom: 7px;
+        }
+
+        &-text {
+            font-family: 'MullerLight';
+            color: @black;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

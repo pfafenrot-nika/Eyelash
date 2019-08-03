@@ -1,0 +1,105 @@
+/* Basic settings */
+.mob__show {
+    display: none;
+}
+
+body {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    background: @white;
+}
+
+.container {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+b {
+    font-family: 'MullerBold';
+}
+
+strong {
+    font-family: 'MullerExtraBold';
+}
+
+header {
+    padding: 0 0 0 0;
+    background: @bg-gray;
+}
+
+input,
+button {
+    border: 0;
+    outline: 0;
+    background: none;
+}
+
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* Общие стили для заголовков */
+.title {
+    font-family: 'MullerExtraBold';
+    font-size: 44px;
+    line-height: 49px;
+    margin-bottom: 5px; 
+    margin-left: -5px;
+    color: @black;
+    text-align: center;
+    &-pink {
+        color: @pink;
+    }
+    &__desc {
+        font-family: 'MullerLight';
+        text-align: center;
+        font-size: 26px;
+        line-height: 50px;
+        font-weight: 500;
+        color: @black;
+        margin-bottom: 26px;
+    }
+}
+
+/* Общие стили для оформления текста */
+.pink {
+    text-transform: uppercase;
+    color: @pink;
+    padding: 20px auto;
+}
+.line-through {
+    text-decoration: line-through;
+}
+
+
+/* Конструкция с перышками */
+.form-container {
+    position: relative;
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        background-repeat: no-repeat;
+    }
+    &__2 {
+        background: @bg-gray;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        width: 1140px;
+        z-index: 5;
+    }
+}
+
